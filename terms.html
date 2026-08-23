@@ -1,0 +1,210 @@
+<title>joeexplains Terms of Service</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --paper: #f4f5f0;
+    --paper-raised: #eceee6;
+    --ink: #202b26;
+    --ink-muted: #5b6560;
+    --accent: #1f6f78;
+    --accent-soft: #dcebe9;
+    --rule: #d7d9d0;
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Work Sans', -apple-system, 'Segoe UI', sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141815;
+      --paper-raised: #1b211d;
+      --ink: #e8ece9;
+      --ink-muted: #97a19b;
+      --accent: #57b8bf;
+      --accent-soft: #1c3634;
+      --rule: #2a302b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141815;
+    --paper-raised: #1b211d;
+    --ink: #e8ece9;
+    --ink-muted: #97a19b;
+    --accent: #57b8bf;
+    --accent-soft: #1c3634;
+    --rule: #2a302b;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.4rem;
+  }
+  .eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2.1rem, 5vw, 2.7rem);
+    line-height: 1.12;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    color: var(--ink-muted);
+    font-size: 0.92rem;
+    padding-bottom: 2.6rem;
+    margin-bottom: 2.6rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .meta strong { color: var(--ink); font-weight: 600; }
+
+  .intro {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0 0 3rem;
+    text-wrap: balance;
+  }
+
+  section { margin-bottom: 2.6rem; }
+  section:last-of-type { margin-bottom: 0; }
+
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0 0 0.9rem;
+  }
+  .num {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  p { margin: 0 0 1rem; color: var(--ink); }
+  p:last-child { margin-bottom: 0; }
+  .muted { color: var(--ink-muted); }
+
+  ul { margin: 0 0 1rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.5rem; }
+  li:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 0.15em; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  code {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    background: var(--paper-raised);
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-muted);
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<div class="page">
+  <div class="eyebrow">joeexplains</div>
+  <h1>Terms of Service</h1>
+  <div class="meta">
+    <span><strong>Effective</strong> 23 August 2026</span>
+    <span><strong>Applies to</strong> the joeexplains TikTok account and its posting tool</span>
+  </div>
+
+  <p class="intro">This is a small, independently run project: a single creator account (@joeexplains) and a tool that helps post to it. These terms are short on purpose &mdash; there's no company, no ad network, and no data broker on the other end of this.</p>
+
+  <section>
+    <h2><span class="num">1</span> What this is</h2>
+    <p>joeexplains is a personal content project run by an individual creator. The associated posting tool is a small piece of software that uses TikTok's official Content Posting API to publish videos to the @joeexplains TikTok account on the creator's behalf.</p>
+    <p>It is not a public service, and it is not offered to other users to post to their own TikTok accounts.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Who can use it</h2>
+    <p>The posting tool is authorized against a single TikTok account: @joeexplains. If you're reading this, you're most likely TikTok's app review team, or the creator checking their own setup &mdash; either way, there's no public sign-up or account creation flow to describe.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Content</h2>
+    <p>Videos published through this tool are written and selected by the creator (with drafting assistance from AI tools). The creator is responsible for the content posted to @joeexplains and for keeping it within TikTok's own Community Guidelines and Content Sharing Guidelines.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> No warranty</h2>
+    <p>This tool is run on a best-effort, hobby basis. It's provided as-is, without warranty of uptime, accuracy, or fitness for any particular purpose. Posting can fail, be delayed, or be interrupted &mdash; there's no service-level commitment behind it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Changes</h2>
+    <p>These terms may be updated as the project evolves. The effective date above reflects the latest version.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Contact</h2>
+    <p>Questions about this project or these terms can be sent to <a href="mailto:alexcwn@gmail.com">alexcwn@gmail.com</a>.</p>
+  </section>
+
+  <footer>
+    <span>joeexplains &middot; personal project</span>
+    <span class="muted">See also the <a href="https://joeexplainsmy-cell.github.io/joeexplains-legal/privacy.html">Privacy Policy</a></span>
+  </footer>
+</div>
