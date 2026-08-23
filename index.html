@@ -1,0 +1,37 @@
+<title>joeexplains</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Work+Sans:wght@400;500;600&display=swap');
+  :root {
+    --paper: #f4f5f0; --ink: #202b26; --ink-muted: #5b6560;
+    --accent: #1f6f78; --accent-soft: #dcebe9; --rule: #d7d9d0;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Work Sans', -apple-system, 'Segoe UI', sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #141815; --ink: #e8ece9; --ink-muted: #97a19b;
+      --accent: #57b8bf; --accent-soft: #1c3634; --rule: #2a302b;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #141815; --ink: #e8ece9; --ink-muted: #97a19b;
+    --accent: #57b8bf; --accent-soft: #1c3634; --rule: #2a302b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1.2rem;
+    background: var(--paper); color: var(--ink);
+    font-family: var(--font-body); text-align: center; padding: 2rem;
+  }
+  h1 { font-family: var(--font-display); font-size: 2.4rem; margin: 0; }
+  p { color: var(--ink-muted); margin: 0; max-width: 32em; }
+  nav { display: flex; gap: 1.5rem; margin-top: 0.6rem; }
+  a { color: var(--accent); text-decoration-color: var(--accent-soft); text-underline-offset: 0.15em; font-weight: 500; }
+</style>
+<h1>joeexplains</h1>
+<p>Daily humor &amp; explainer videos from a typical Malaysian Joe, posted to @joeexplains on TikTok.</p>
+<nav>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
